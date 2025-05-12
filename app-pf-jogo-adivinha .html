@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app-pf-jogo-adivinha.css">
+    <title>NumberGuess</title>
+</head>
+<body>
+    <header>
+        <h1>NumberGuess</h1>
+        <nav>
+            <ul>
+                <li><a href="app-pf-jogo-adivinha.html">Play Game</a></li>
+                <li><a href="app-pf-jogo-adivinha-rules.html">Game Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Guess the number between 1 and 100!</h2>
+        <form>
+            <label for="guessInput">Enter your guess:</label>
+            <input type="number" id="guessInput" min="1" max="100" required>
+            <button type="submit">Submit Guess</button>
+        </form>
+        <div id="score">
+             <div id="result">1</div>
+            <div id="attempts">2</div>
+        </div>
+        <button id="restartButton"></button>
+    </main>
+</body>
+</html>
