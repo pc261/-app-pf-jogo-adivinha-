@@ -14,7 +14,7 @@ function startGame() {
 
 if (localStorage.getItem("randomNumber") === null) {
     startGame();
-} else {
+} else { 
     const storedAttempts = localStorage.getItem("attempts");
     attempts.innerText = storedAttempts ? atob(storedAttempts) : 10;
 }
