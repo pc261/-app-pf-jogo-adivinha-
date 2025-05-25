@@ -22,12 +22,13 @@
         <form>
             <label for="guessInput">Enter your guess:</label>
             <input type="number" id="guessInput" min="1" max="100" required>
+            <div id="score">
+                <h3>Attempts:</h3>
+                <h3 id="attempts"></h3>
+            </div>
             <button id="submit">Submit Guess</button>
         </form>
-        <div id="score">
-            <h3 id="attempts"></h3>
-        </div>
-        <button id="restartButton"></button>
+        <button id="reset">Restart Game</button>
     </main>
 </body>
 </html>

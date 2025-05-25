@@ -139,13 +139,29 @@ main{
     padding: .8rem;
     gap: 4rem;
 
-    div{
+    h3{
         text-align: justify;
         color: white;
         font-size: 1.3rem;
     }
 }
 
-#restartButton{
-    visibility: hidden;
+#reset{
+
+    width: 15rem;
+    height: 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #d57b4c;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #ffffffc4;
+        color: white;
+        transition-duration: 0.3s ease-in-out; 
+    }
 }
