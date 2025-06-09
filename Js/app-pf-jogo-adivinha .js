@@ -28,16 +28,17 @@ submit.onclick = () => {
         alert("Por favor, digite um número de 1 a 100.");
         return;
     }
-
+    
     if (guess === answer) {
         alert("🎉 Parabéns! Você acertou o número!");
         startGame();
+        return;
     } else if (guess < answer) {
         alert("O número é maior!");
     } else {
         alert("O número é menor!");
     }
-
+ 
     let attemptsLeft = Number(atob(localStorage.getItem("attempts")));
     attemptsLeft--;
 
